@@ -1,0 +1,337 @@
+
+/* Site-wide */
+body{
+	font-family: Open Sans; 
+	font-size: 18px;
+	background-color: #FFF;
+}
+
+
+form input{
+	font-family: Open Sans; 
+	font-size: 18px;
+	background-color: #ddd;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+form input[type="text"]{
+	background-color: #fff;
+}
+form input[type="password"]{
+	background-color: #fff;
+}
+
+form input:hover{
+	background-color: #eee;
+}
+
+/* Login screen */
+#login_panel{
+	width: 500px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	margin-top: 200px;
+	padding: 30px;
+	text-align: center;
+}
+
+#login_message{
+	background-color: #eef;
+	margin-bottom: 10px;
+}
+#login_panel label{
+	width: 100px;
+	display: inline-block;
+}
+
+/* Filtering Panel */
+
+#panel_container{
+	color: #1093bf;
+	overflow: auto;
+	width: 201vw;
+	
+}
+
+#roles{
+	
+}
+
+.panel{
+	width: 100vw;
+	float:left;
+}
+
+.panel_info{
+	float: left;
+	margin-left: 80px;
+}
+
+#main_title{
+	margin-top: 70px;
+	font-size: 50px;
+	margin-left: 80px;
+	color: #1093bf;
+}
+
+.steps{
+	margin-top: 80px;
+	font-size: 25px;
+}
+
+.active_step{
+	
+}
+
+.inactive_step{
+	color: #000;
+}
+
+.prompt{
+	margin-top: 80px;
+	font-size: 40px;
+}
+
+.option_grid{
+	width: 700px;
+	float: right;
+	margin-top: 80px;
+	margin-right: 80px;
+}
+
+.option{
+	display: inline-block;
+	width: 230px;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+/* Learning Object Display */
+
+#playlist_title{
+	padding: 5px;
+	background-color: #1093bf;
+	margin-bottom: 3px;
+	color: #fff;
+}
+
+#playlist{
+	float: left;
+	margin-left: 80px;
+	margin-top: 40px;
+	width: 300px;
+}
+
+.play_item{
+	padding: 5px;
+	margin-bottom: 3px;
+	background-color: #EEE;
+}
+
+#lo_panel{
+	margin-top: 40px;
+	float: right;
+	margin-right: 80px;
+	width: 1000px;
+	overflow: auto;
+}
+
+#tab_list{
+	
+}
+
+.tab{
+	display: inline-block;
+	padding: 4px 20px 4px 20px;
+	margin-right: 3px;
+	background-color: #1093bf;
+	color: #FFF;
+	font-size: 30px;
+}
+
+.active{
+	background-color: #fd9a00;
+}
+
+.tab_content{
+	border: 8px solid #fd9a00;
+	height: 500px;
+}
+
+.content{
+	width: 700px;
+	height: 600px;
+	float: left;
+}
+
+.video_content{
+	
+}
+
+.text_content{
+	padding: 10px;
+}
+
+.side_panel{
+	width: 265px;
+	height: 490px;
+	float: left;
+	border-left: 8px solid #fd9a00;
+	padding: 5px 5px 5px 5px;
+}
+
+/* Authoring view */
+
+#toggle_buttons{
+	width: 700px;
+	margin: 0 auto;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+#toggle_buttons .button{
+	display: inline-block;
+	width: 290px;
+	margin: 20px;
+	background-color: #1093bf;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+#toggle_buttons .active{
+	background-color: #fd9a00;
+}
+
+#add_new{
+	width: 290px;
+	margin: 0 auto;
+	background-color: #1093bf;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#list_mine{
+}
+
+#list_all{
+}
+
+#listing_panel{
+	width: 700px;
+	margin: 0 auto;
+}
+
+.learning_object{
+	padding: 5px;
+	background-color: #eee;
+	margin-bottom: 20px;
+}
+
+.title{
+	font-size: 20px;
+}
+
+.tags{
+	
+}
+
+.tag{
+	display: inline-block;
+	padding: 3px 20px 3px 20px;
+	background-color: #fd9a00;
+	border-radius: 8px;
+	margin-right: 3px;
+}
+a .tag{
+	color: #000;
+}
+
+#new_object_panel{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#new_object_panel input{
+	width: 600px;
+}
+
+#new_object_panel .type_choice{
+	width: 40px;
+}
+
+#new_object_panel h1{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+#tab_container{
+	
+}
+
+#tab_title{
+	text-align: center;
+	margin-top:20px;
+}
+
+.tab_definition{
+	border: 1px solid #ddd;
+	background-color: #eee;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 8px;
+}
+
+.close_button{
+	float: right;
+	margin-top: -8px;
+	margin-right: -8px;
+	padding: 0px 10px 2px 10px;
+	background-color: #c33;
+	color: #fff;
+	font-size: 24px;
+}
+.close_button:hover{
+	background-color: #d44;
+}
+
+#new_tab_button{
+	width: 200px;
+	margin: 0 auto;
+	padding: 2px 10px 2px 10px;
+	text-align: center;
+	background-color: #3c3;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#new_tab_button:hover{
+	background-color: #4d4;
+}
+
+.tab_create_form{
+}
+.tab_create_form label{
+	width: 100px;
+	display: inline-block;
+}
+.tab_create_form textarea{
+	width: 600px;
+}
+
+/* Errors */
+
+#error{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.error_title{
+	
+}
