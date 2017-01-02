@@ -78,7 +78,7 @@
 		$('document').ready(function(){
 			
 			// Load the first learning object
-			loadLearnObj( <?php echo $los['0']['id']; ?> );
+			loadLearnObj( "<?php echo $los['0']['label']; ?>" );
 			
 			// Load new learning objects
 			$('.play_item').click( function(){
@@ -98,7 +98,7 @@
 	<div id="playlist">
 		<div id="playlist_title">Content found:</div>
 		<?php foreach (($los?:array()) as $learnObj): ?>
-			<div id="<?php echo $learnObj['id']; ?>" class="play_item"><?php echo $learnObj['title']; ?></div>
+			<div id="<?php echo $learnObj['label']; ?>" class="play_item"><?php echo $learnObj['title']; ?></div>
 		<?php endforeach; ?>
 	</div>
 	

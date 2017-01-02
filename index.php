@@ -35,7 +35,7 @@ $f3->route('GET /logout', 'MyAuth->logout');			// Log the user out
 
 // Content links
 $f3->route('GET /search/@tags', 'ContentPool->search');	// Searching for content
-$f3->route('GET /loadlo/@id', 'ContentPool->load');		// Loading a single Learning Object
+$f3->route('GET /loadlo/@label', 'ContentPool->load');	// Loading a single Learning Object
 
 // Authoring areas
 $f3->route('GET /author', 'Author->listing');			// List the available content

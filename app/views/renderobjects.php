@@ -78,7 +78,7 @@
 		$('document').ready(function(){
 			
 			// Load the first learning object
-			loadLearnObj( {{ @los[0].id }} );
+			loadLearnObj( "{{ @los[0]['label'] }}" );
 			
 			// Load new learning objects
 			$('.play_item').click( function(){
@@ -98,7 +98,7 @@
 	<div id="playlist">
 		<div id="playlist_title">Content found:</div>
 		<repeat group="{{ @los }}" value="{{ @learnObj }}">
-			<div id="{{ @learnObj.id }}" class="play_item">{{ @learnObj.title }}</div>
+			<div id="{{ @learnObj.label }}" class="play_item">{{ @learnObj.title }}</div>
 		</repeat>
 	</div>
 	

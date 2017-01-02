@@ -24,7 +24,7 @@ class ContentPool{
 		//  count: number of matching tags
 		$matches = $f3->get('DB')->exec('
 				SELECT 
-					`learningobject`.`id`, 
+					`learningobject`.`id`,
 					`tag`.`value`,
 					COUNT(`learningobject`.`id`) AS "count"
 				FROM `tag`
@@ -61,7 +61,7 @@ class ContentPool{
 				//  store for rendering
 				$f3->set('los', $f3->get('DB')->exec('
 						SELECT 
-							`learningobject`.`id`,
+							`learningobject`.`label`,
 							`learningobject`.`title`
 						FROM `learningobject`
 						WHERE `learningobject`.`id` IN
@@ -104,19 +104,19 @@ class ContentPool{
 	function load($f3){
 		
 		// Sanitise parameters from the address bar
-		$loid = $f3->get('PARAMS.id');
-		$loid = $f3->scrub($loid);
+		$label = $f3->get('PARAMS.label');
+		$label = $f3->scrub($label);
 		
 		// Pull data for matching learning objects
 		$tabs = $f3->get('DB')->exec('
 			SELECT 
 				`learningobject`.`title`,
-				`tab`.* 
+				`tab`.`title`, `tab`.`type`, `tab`.`content`, `tab`.`sidePanelText`, `tab`.`sequence` 
 			FROM `learningobject`
 				JOIN `tab` ON `learningobject`.`id` = `tab`.`learnObjId`
-			WHERE `learningobject`.`id` = :loid
+			WHERE `learningobject`.`label` = :label
 			ORDER BY `tab`.`sequence`',
-			array( ':loid'=>$loid )
+			array( ':label'=>$label )
 		);
 		
 		// Found a match?
